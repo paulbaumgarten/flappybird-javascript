@@ -10,5 +10,5 @@
     "background_color": "#00ccff",
     "display": "standalone",
     "scope": "/",
-    "theme_color": "#00ccff",
+    "theme_color": "#00ccff"
   }
