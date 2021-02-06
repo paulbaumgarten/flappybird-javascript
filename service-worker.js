@@ -5,14 +5,27 @@ Based on https://developers.google.com/web/ilt/pwa/introduction-to-service-worke
 https://web.dev/offline-cookbook/#on-activate
 */
 
-const CACHE_VERSION = '2021-01-31-a'; // Change version to force cache refresh on clients
+const CACHE_VERSION = '2021-02-06-a'; // Change version to force cache refresh on clients
 const CACHE_FILES = [
-    '/app/index.html',
-    '/app/page2.html',
-    '/app/offline.html',
-    '/app/main.js'
+    '/media/background.png',
+    '/media/base.png',
+    '/media/die.mp3',
+    '/media/flappybird-animation.gif',
+    '/media/hit.mp3',
+    '/media/pipe-top.png',
+    '/media/pipe-bottom.png',
+    '/media/point.mp3',
+    '/media/Roboto-Light.ttf',
+    '/media/swoosh.mp3',
+    '/media/wing.mp3',
+    '/index.html',
+    '/index.css',
+    '/p5.min.js',
+    '/p5.sound.min.js',
+    '/main.js',
+    '/register.js'
 ];
-const OFFLINE_URL = '/app/offline.html';
+const OFFLINE_URL = '/index.html';
 
 console.error('[service-worker.js] loaded');
 
