@@ -27,7 +27,7 @@ function setup() {
     game_size = [windowWidth, windowHeight]; // windowWidth & windowHeight are auto created by p5.js
     createCanvas(game_size[0], game_size[1]);
     BACKGROUND.resize(game_size[0], game_size[1]); // Resize to match screen
-    BASE.resize(game_size[0], BASE.height); // Adjust width only to the screen
+    BASE.resize(game_size[0], BASE.height);
     frameRate(25);
 }
 
@@ -82,7 +82,6 @@ function play() { // One frame of the game (1/25th of a second)
 
 function draw() {
     // Paint background
-    background('rgba(0,255,0, 0.25)');
     image(BACKGROUND, 0, 0); // for cropping https://p5js.org/reference/#/p5/get
     image(BASE, 0, game_size[1]-BASE.height);
     if (game_running) { // Game is happening!
