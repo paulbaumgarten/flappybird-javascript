@@ -68,6 +68,7 @@ function play() { // 1/25th of a second
         lives -= 1;
         if (lives < 0) {
             game_running = false;
+            fullscreen(false);
             DIE.play();
         } else {
             HIT.play();
@@ -91,6 +92,7 @@ function draw() {
             game_running = true;
             lives = 5;
             points = 0;
+            fullscreen(true);
         }
     } else {
         play();
